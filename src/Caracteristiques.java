@@ -1,9 +1,6 @@
 import java.util.Scanner;
 
 public class Caracteristiques {
-
-    Scanner sc = new Scanner(System.in);
-
     final static String marcaDelConjunt = "Cendrabus";
     final static String combustible = "Gasoil";
     static int nombreDeSeients;
