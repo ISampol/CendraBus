@@ -22,6 +22,19 @@ public class CendraBuss {
         System.out.println("Digues el color o colors");
         Caracteristiques.color = sc.next();
 
+        System.out.println("Per ultim digues el pes i el preu del vehicle");
+        Caracteristiques.pesVehicle = sc.nextInt();
+        Caracteristiques.preuVehicle = sc.nextInt();
+
+        System.out.println("Digues quins extres vols");
+        String extres = sc.next();
+
+        do {
+            if (extres.equals("AireAcondicionat")){
+                Caracteristiques.preuVehicleAmbExtres = Caracteristiques.preuVehicle + Extres.aireCondicionatEuros;
+                Caracteristiques.pesVehicleAmbExtres = Caracteristiques.pesVehicle + Extres.aireCondicionatPes;
+            }
+        }while(!extres.equals("exit"));
 
 
 
