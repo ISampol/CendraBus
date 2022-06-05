@@ -32,12 +32,24 @@ public class CendraBuss {
         System.out.println("Digues quins extres vols");
         String extres = sc.next();
 
+        String seleccio = "";
 
         if (extres.equals("AireCondicionat")){
             cendraBus.preuVehicleAmbExtres = cendraBus.preuVehicle + elsExtres.aireCondicionatEuros;
             cendraBus.pesVehicleAmbExtres = cendraBus.pesVehicle + elsExtres.aireCondicionatPes;
+            seleccio = "Aire Condicionat";
         }else if (extres.equals("EnganxallRemolc")){
             cendraBus.preuVehicleAmbExtres = cendraBus.preuVehicle + elsExtres.enganxallRemolcEuros;
+            cendraBus.pesVehicleAmbExtres = cendraBus.pesVehicle + elsExtres.enganxallRemolcPes;
+        }else if(extres.equals("SeientsLuxe")){
+            cendraBus.preuVehicleAmbExtres = cendraBus.preuVehicle + elsExtres.seientsLuxeEuros;
+            cendraBus.pesVehicleAmbExtres = cendraBus.pesVehicle + elsExtres.seientsLuxePes;
+        }else if (extres.equals("Calefaccio")){
+            cendraBus.preuVehicleAmbExtres = cendraBus.preuVehicle + elsExtres.calefaccioEuros;
+            cendraBus.pesVehicleAmbExtres = cendraBus.pesVehicle + elsExtres.calefaccioPes;
+        }else if (extres.equals("VidreClimatitzat")){
+            cendraBus.preuVehicleAmbExtres = cendraBus.preuVehicle + elsExtres.vidreClimatitzatEuros;
+            cendraBus.pesVehicleAmbExtres = cendraBus.pesVehicle + elsExtres.vidreClimatitzatPes;
         }
 
 
@@ -48,7 +60,7 @@ public class CendraBuss {
                 " amb una cilindrada de " + cendraBus.cilindrada + " i " + cendraBus.potencia + " cavalls de potència. ");
 
         System.out.println("L’autobús té una longitud de " + cendraBus.longitud + " metres i será de color " + cendraBus.color + " i incorporarà " +
-                "els següents extres xxxxxxx, xxxxx , xxxxx.");
+                "els següents extres " + seleccio);
 
         System.out.println("Un cop acabat el vehicle tindrà un preu de " + cendraBus.preuVehicleAmbExtres + " euros i un pes de " + cendraBus.pesVehicleAmbExtres + " kgs.");
 
