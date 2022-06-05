@@ -1,10 +1,6 @@
 public class Extres {
-    int aireCondicionatEuros;
-    int aireCondicionatPes;
+    static int aireCondicionatEuros = 10000;
+    static int aireCondicionatPes = 250;
     int enganxallRemolc;
 
-    Extres(){
-        aireCondicionatEuros = 10000;
-        aireCondicionatPes = 250;
-    }
 }

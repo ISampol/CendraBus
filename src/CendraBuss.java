@@ -4,8 +4,6 @@ public class CendraBuss {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        Extres elsExtres = new Extres();
-
 //        System.out.println("Digues el numero de seients");
 //        Caracteristiques.nombreDeSeients = sc.nextInt();
 //
@@ -33,8 +31,8 @@ public class CendraBuss {
 
 
         if (extres.equals("AireAcondicionat")) {
-            Caracteristiques.preuVehicleAmbExtres = Caracteristiques.preuVehicle + elsExtres.aireCondicionatEuros;
-            Caracteristiques.pesVehicleAmbExtres = Caracteristiques.pesVehicle + elsExtres.aireCondicionatPes;
+            Caracteristiques.preuVehicleAmbExtres = Caracteristiques.preuVehicle + Extres.aireCondicionatEuros;
+            Caracteristiques.pesVehicleAmbExtres = Caracteristiques.pesVehicle + Extres.aireCondicionatPes;
         }
 
 
