@@ -1,11 +1,10 @@
 public class Extres {
-    static int aireCondicionatEuros;
-    static int aireCondicionatPes;
-    static int enganxallRemolc;
+    int aireCondicionatEuros;
+    int aireCondicionatPes;
+    int enganxallRemolc;
 
-    public Extres(){
+    Extres(){
         aireCondicionatEuros = 10000;
         aireCondicionatPes = 250;
-
     }
 }
